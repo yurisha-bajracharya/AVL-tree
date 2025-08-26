@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px;
+    color: #1976d2;
+}
+
+.controls {
+    margin: 20px 0;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: inline-block;
+}
+
+input[type="number"] {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+button:hover {
+    background-color: #1565c0;
+}
+
+.speed-control {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#speedSlider {
+    margin: 0 10px;
+    width: 150px;
+}
+
+.legend {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+}
+
+.color-box {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+    border: 1px solid #1976d2;
+}
+
+.color-box.traversal {
+    background-color: #ffd54f;
+}
+
+.color-box.target {
+    background-color: #4caf50;
+}
+
+.color-box.replacement {
+    background-color: #9c27b0;
+}
+
+.traversal-order {
+    background-color: #f5f5f5;
+    padding: 12px;
+    margin: 15px auto;
+    max-width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+}
+
+#treeCanvas {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}

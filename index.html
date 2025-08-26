@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVL Tree Visualization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>AVL Tree Visualization</h1>
+    <div class="controls">
+        <input type="number" id="valueInput" placeholder="Enter value">
+        <button onclick="insertValue()">Insert</button>
+        <button onclick="deleteValue()">Delete</button>
+        <div class="speed-control">
+            <label>Animation Speed: </label>
+            <input type="range" id="speedSlider" min="100" max="1000" value="400" step="50">
+            <span id="speedValue">400ms</span>
+        </div>
+        <div class="legend">
+            <div class="legend-item"><span class="color-box traversal"></span> Traversal Path</div>
+            <div class="legend-item"><span class="color-box target"></span> Target Node</div>
+            <div class="legend-item"><span class="color-box replacement"></span> Replacement Node</div>
+        </div>
+    </div>
+    <canvas id="treeCanvas" width="1000" height="500"></canvas>
+    <script src="avl.js"></script>
+</body>
+</html>
